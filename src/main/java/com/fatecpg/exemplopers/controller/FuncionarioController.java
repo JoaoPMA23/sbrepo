@@ -103,7 +103,7 @@ public class FuncionarioController {
     public ResponseEntity<Promocao> updatePromocao(
         @PathVariable Long id,     // id do funcionario
         @PathVariable Long proid,  // id da Promocao
-        @RequestBody Promocao pro) // Promocao com novos dados
+        @RequestBody Promocao pro) // Promocao com os NOVOS DADOS
     {
         return pessoaService.updatePromocao(id, proid, pro)
             .map(xpro -> ResponseEntity.ok(xpro))
